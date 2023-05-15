@@ -17,7 +17,7 @@ export interface Event {
   <table>
   <thead>
     <tr>
-      <th>Time</th>
+      <th></th>
       <th *ngFor="let day of days">{{ day }}</th>
     </tr>
   </thead>
@@ -39,8 +39,8 @@ export interface Event {
 export class App {
   name = 'Angular';
 
-  days: string[] = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-  hours: number[] = Array.from({ length: 24 }, (_, i) => i);
+  days: string[] = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  hours: number[] = [7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21];
   events: any[] = [
     {
       title: 'Meeting',
