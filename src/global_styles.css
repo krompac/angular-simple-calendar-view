@@ -11,6 +11,10 @@ th {
   border-bottom: 1px solid #ddd;
 }
 
+tbody > tr:hover {
+  background-color: rgb(243 244 246);
+}
+
 td {
   padding: 20px;
   border: 1px solid #ddd;
